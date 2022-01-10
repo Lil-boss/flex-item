@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex item</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        border: 3px solid red;
+      }
+      .box {
+        width: 200px;
+        border: 2px solid blue;
+        align-items: stretch;
+      }
+      #box1 {
+        justify-content: space-evenly;
+      }
+      #box2 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box">BOX-1</div>
+      <div id="box2" class="box">BOX-2</div>
+    </div>
+  </body>
+</html>
